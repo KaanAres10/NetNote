@@ -1,4 +1,4 @@
-# CSEP Project Team 60
+# NetNote
 ## How to run
 To run the template project from the command line, you either need to have [Maven](https://maven.apache.org/install.html) installed on your local system (`mvn`) or you need to use the Maven wrapper (`mvnw`). You can then execute
 
