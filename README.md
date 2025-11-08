@@ -1,28 +1,6 @@
 A collaborative **note-taking app** built with **Spring Boot (server)** and **JavaFX (client)**, featuring markdown support, collections, file attachments, multi-server setups, and full keyboard navigation.
 
-## How to run
-First clone the repo `git clone https://github.com/KaanAres10/NetNote.git`
-
-Then to run the template project from the command line, you either need to have [Maven](https://maven.apache.org/install.html) installed on your local system (`mvn`) or you need to use the Maven wrapper (`mvnw`). You can then execute
-
-	mvn clean install
-
-to package and install the artifacts for the three subprojects. Afterwards, you can run ...
-
-	cd server
-	mvn spring-boot:run
-
-to start the server or ...
-
-	cd client
-	mvn javafx:run
-
-to run the client. Please note that the server needs to be running, before you can start the client.
-
-Once this is working, you can try importing the project into your favorite IDE.
-
 # FULL APP TUTORIAL
-
 ## Markdown Basics
 
 All of the notes have markdown. To use the features:
@@ -93,27 +71,6 @@ You can clear tags using only the keyboard. Navigate to the first dropdown tag m
 - To create a new server add it to the servers.txt file  in commons an create a new configuration following the format of the already created ones.
 For every server the new configuration is needed: like application-server1.properties: the file should include the port and the name of the server in the configuration file
 - For the first three servers the property files are already included and the only needed thing is to create the right intelliJ configuration with VM variables and active profile name.
-
-## Implemented features
-
-Our team has implemented all of the features from the Product Backlog.
-
-1. Basic features: you can navigate them thought the buttons and search bar on top. We have also added the option to move notes up and down
-to ensure a nice and logical state of the app. The collection menu serves as a manual refresh button. By clicking it you ensure that everything is up to date but there is no need for taht becasue everything is automatically updated. 
-2. Multi collection: The drop down menu on top of the search bar shows the current collectio and the person can switch collections from it.
-The button on the right of it opens a new scene. From there the user can create/delete/rename collections. 
-- Bonus feature: He can also change servers. Each server is connected to different collections connected to different notes. See above(How to start/create new server). Status of the server is shown when selecting a server.
-3. Embeded files: The 📎 allow you to add files to the note and see them in the preview. On the bottom you can see all of your files. You can rename then
-and delete them from there. 
--Bonus feature we implemented: the ability to move files from one note to another using the button next in the files menu.
-4. Interconnected content: The empty drop down menu above the title is for tags. Add tags to the notes and they will appear there. If there is more than 1
-tag new boxes will show up after you have filled the first one. 
--Bonus feature we have implemented: An algorithm that searches and tells you the closest word to yours. If you try to reference a note using `[[noteName]]`
-but there is no note with the correct name and you hover your mouse over the red name on the markdown you will get the closest name to your noteName. If there
-is no note that is close you will not be able to resolve.
-5. Automated Change Synchronizatio: Implemented! 
-6. Live Language switch: Use the top right drop down menu to change languages.
-- Bonus: Buttons and labels change size depending on language to ensure maximal usability. Markdown tutorial in webview is also translated! We support 3 fully funcational languages.
 
 
 ## Usability:
