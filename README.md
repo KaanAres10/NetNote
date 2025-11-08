@@ -1,4 +1,3 @@
-# NetNote
 A collaborative **note-taking app** built with **Spring Boot (server)** and **JavaFX (client)**, featuring markdown support, collections, file attachments, multi-server setups, and full keyboard navigation.
 
 ## How to run
