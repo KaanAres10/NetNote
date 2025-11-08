@@ -1,7 +1,9 @@
 A collaborative **note-taking app** built with **Spring Boot (server)** and **JavaFX (client)**, featuring markdown support, collections, file attachments, multi-server setups, and full keyboard navigation.
 
 ## How to run
-To run the template project from the command line, you either need to have [Maven](https://maven.apache.org/install.html) installed on your local system (`mvn`) or you need to use the Maven wrapper (`mvnw`). You can then execute
+First clone the repo `git clone https://github.com/KaanAres10/NetNote.git`
+
+Then to run the template project from the command line, you either need to have [Maven](https://maven.apache.org/install.html) installed on your local system (`mvn`) or you need to use the Maven wrapper (`mvnw`). You can then execute
 
 	mvn clean install
 
